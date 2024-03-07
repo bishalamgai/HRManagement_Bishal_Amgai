@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="472.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hrmanagement_bishal_amgai.EmployeeController">
+   <children>
+      <TextField layoutX="104.0" layoutY="40.0" prefHeight="25.0" prefWidth="427.0" fx:id="employeeNameTextField" promptText="Employee Name" />
+      <TextField  layoutX="104.0" layoutY="77.0" prefHeight="25.0" prefWidth="427.0" fx:id="salaryTextField" promptText="Salary" />
+      <TextField  layoutX="104.0" layoutY="120.0" prefHeight="25.0" prefWidth="427.0" fx:id="departmentTextField" promptText="Department" />
+      <TableView layoutX="104.0" layoutY="159.0" prefHeight="200.0" fx:id="tableView" prefWidth="427.0">
+        <columns>
+          <TableColumn prefWidth="75.0" fx:id="id" text="ID" />
+          <TableColumn prefWidth="112.66668701171875" fx:id="Name" text="Employee Name" />
+            <TableColumn prefWidth="82.6666259765625" fx:id="Salary" text="Salary" />
+            <TableColumn prefWidth="78.0" fx:id="Department" text="Department" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="107.0" layoutY="372.0" prefHeight="46.0" prefWidth="427.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Viewdata" text="View Data" />
+            <Button mnemonicParsing="false" onAction="#Insert" text="Insert" />
+            <Button mnemonicParsing="false" onAction="#Update" text="Update" />
+            <Button mnemonicParsing="false" onAction="#Delete" text="Delete" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
